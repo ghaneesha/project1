@@ -1,97 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Villa Home</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar" role="banner">
     <!-- Top bar -->
     <div class="navbar-top">
       <div class="navbar-left">
-        <span class="contact-email">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
-          1.1.9 2 2 2h16c1.1 0 2-.9 
-          2-2V6c0-1.1-.9-2-2-2zm0 
-          4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span class="contact-email" title="Email">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
           villa@example.com
         </span>
-        <span class="contact-address">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.14 2 
-          5 5.14 5 9c0 5.25 7 13 7 
-          13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 
-          9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 
-          6.5 12 6.5s2.5 1.12 2.5 
-          2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span class="contact-address" title="Address">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           123 Beach Road, City
         </span>
       </div>
-      <div class="navbar-right">
-        <!-- Social icons -->
-        <a href="#" class="social-icon" title="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 
-          6.478 2 12c0 4.991 3.657 9.128 8.438 
-          9.878v-6.987H7.898v-2.891h2.54V9.797c0-2.507 
-          1.492-3.891 3.777-3.891 1.094 0 2.238.196 
-          2.238.196v2.459h-1.26c-1.243 0-1.63.771-1.63 
-          1.562v1.875h2.773l-.443 2.891h-2.33v6.987C18.343 
-          21.128 22 16.991 22 12" /></svg></a>
-        <a href="#" class="social-icon" title="Twitter"><svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775A4.958 
-          4.958 0 0023.337 3c-.935.555-1.97.959-3.077 
-          1.184a4.92 4.92 0 00-8.389 4.482C7.69 8.39 
-          4.066 6.13 1.64 3.162c-.542.931-.855 
-          2.012-.855 3.17 0 2.188 1.115 4.117 
-          2.82 5.255a4.903 4.903 0 01-2.229-.616c0 
-          2.996 2.133 5.507 4.977 6.075a4.935 
-          4.935 0 01-2.224.084c.63 1.965 
-          2.445 3.395 4.604 3.436A9.867 
-          9.867 0 010 19.54a13.945 
-          13.945 0 007.548 2.212c9.057 0 
-          14.009-7.514 14.009-14.009 
-          0-.213-.004-.425-.014-.636A10.025 
-          10.025 0 0024 4.59z"/></svg></a>
-        <a href="#" class="social-icon" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 
-          0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.049c.476-.901 
-          1.637-1.85 3.368-1.85 3.602 0 4.265 2.368 
-          4.265 5.455v6.286zM5.337 7.433a2.07 2.07 0 
-          11.001-4.141 2.07 2.07 0 
-          01-.001 4.141zM7.12 20.452H3.56V9h3.56v11.452z"/></svg></a>
-        <a href="#" class="social-icon" title="Instagram">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path fill="currentColor" d="M7.75 2h8.5A5.75 5.75 0 0 1 22 
-    7.75v8.5A5.75 5.75 0 0 1 16.25 
-    22h-8.5A5.75 5.75 0 0 1 2 
-    16.25v-8.5A5.75 5.75 0 0 1 
-    7.75 2zm0 1.5A4.25 4.25 0 0 0 
-    3.5 7.75v8.5A4.25 4.25 0 0 0 
-    7.75 20.5h8.5a4.25 4.25 0 0 0 
-    4.25-4.25v-8.5A4.25 4.25 0 0 0 
-    16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 
-    10 5 5 0 0 1 0-10zm0 1.5a3.5 
-    3.5 0 1 0 0 7 3.5 3.5 0 0 0 
-    0-7zm5.25-.88a1.13 1.13 0 1 1 
-    0 2.26 1.13 1.13 0 0 1 0-2.26z"/>
-  </svg>
-</a>
+
+      <div class="navbar-right" aria-hidden="false">
+        <a href="#" class="social-icon" title="Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.891h2.54V9.797c0-2.507 1.492-3.891 3.777-3.891 1.094 0 2.238.196 2.238.196v2.459h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12" /></svg>
+        </a>
+        <a href="#" class="social-icon" title="Twitter" aria-label="Twitter">
+          <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775A4.958 4.958 0 0023.337 3c-.935.555-1.97.959-3.077 1.184a4.92 4.92 0 00-8.389 4.482C7.69 8.39 4.066 6.13 1.64 3.162c-.542.931-.855 2.012-.855 3.17 0 2.188 1.115 4.117 2.82 5.255a4.903 4.903 0 01-2.229-.616c0 2.996 2.133 5.507 4.977 6.075a4.935 4.935 0 01-2.224.084c.63 1.965 2.445 3.395 4.604 3.436A9.867 9.867 0 010 19.54a13.945 13.945 0 007.548 2.212c9.057 0 14.009-7.514 14.009-14.009 0-.213-.004-.425-.014-.636A10.025 10.025 0 0024 4.59z"/></svg>
+        </a>
+        <a href="#" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.049c.476-.901 1.637-1.85 3.368-1.85 3.602 0 4.265 2.368 4.265 5.455v6.286zM5.337 7.433a2.07 2.07 0 11.001-4.141 2.07 2.07 0 01-.001 4.141zM7.12 20.452H3.56V9h3.56v11.452z"/></svg>
+        </a>
+        <a href="#" class="social-icon" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26z"/></svg>
+        </a>
       </div>
     </div>
 
     <!-- Bottom Nav -->
-    <div class="navbar-bottom">
+    <div class="navbar-bottom" role="navigation" aria-label="Main navigation">
       <div class="navbar-villa"><strong>VILLA</strong></div>
       <nav class="navbar-links">
         <a href="#" class="nav-link">Home</a>
         <a href="#" class="nav-link">Properties</a>
         <a href="#" class="nav-link">Property Details</a>
         <a href="#" class="nav-link">Contact Us</a>
-        <div class="nav-schedule">
-          <div class="calendar-circle">
-            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 
-            0-2 .9-2 2v14c0 1.1.9 2 
-            2 2h14c1.1 0 2-.9 
-            2-2V6c0-1.1-.9-2-2-2zm0 
-            16H5V9h14v11z"/></svg>
+        <div class="nav-schedule" role="button" tabindex="0" aria-label="Schedule a Visit (nav)">
+          <div class="calendar-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
           </div>
           Schedule a Visit
         </div>
@@ -99,9 +55,9 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" role="main">
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" aria-label="Hero">
       <div class="hero-content">
         <div class="location-box">Toronto, Canada</div>
         <h1>HURRY!</h1>
@@ -110,7 +66,7 @@
     </section>
 
     <!-- Featured Section -->
-    <section class="featured">
+    <section class="featured" aria-labelledby="featured-title">
       <div class="featured-container">
         <!-- Left -->
         <div class="featured-image">
@@ -121,11 +77,11 @@
         <!-- Middle -->
         <div class="featured-description">
           <span class="badge">FEATURED</span>
-          <h2>Best Apartment & Sea View</h2>
+          <h2 id="featured-title">Best Apartment & Sea View</h2>
 
           <!-- Three Dropdowns -->
           <div class="dropdown">
-            <div class="dropdown-toggle">Best useful links ?</div>
+            <div class="dropdown-toggle" tabindex="0">Best useful links ?</div>
             <div class="dropdown-content">
               <p>Get <b>the best villa</b> template in HTML CSS and Bootstrap
               for your business. XYZ provides <span class="link-text">the best service</span>.</p>
@@ -133,7 +89,7 @@
           </div>
 
           <div class="dropdown">
-            <div class="dropdown-toggle">How does this work ?</div>
+            <div class="dropdown-toggle" tabindex="0">How does this work ?</div>
             <div class="dropdown-content">
               <p>This project shows how a professional villa website can
               display its features and booking process in a simple way.</p>
@@ -141,7 +97,7 @@
           </div>
 
           <div class="dropdown">
-            <div class="dropdown-toggle">Why is Villa Agency the best ?</div>
+            <div class="dropdown-toggle" tabindex="0">Why is Villa Agency the best ?</div>
             <div class="dropdown-content">
               <p>We provide <b>secure process</b>, transparent documents,
               and unmatched safety features making us the best choice.</p>
@@ -150,7 +106,7 @@
         </div>
 
         <!-- Right -->
-        <div class="featured-info">
+        <div class="featured-info" aria-hidden="false">
           <div class="info-box">
             <svg class="info-icon" viewBox="0 0 24 24"><path d="M3 3h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"/></svg>
             <div><h4>250 m²</h4><p>Total Flat Space</p></div>
@@ -178,44 +134,231 @@
       </div>
     </section>
 
-    <!-- Video View Section -->
-    <section class="video-view">
-        <p class="video-subtitle">VIDEO VIEW</p>
-        <h1 class="video-heading">Get Closer View &</h1>
-        <h1 class="video-heading">Different Feeling</h1><br><br>
-      <div class="video-container">
-        <img src="./images/video_thumbnail_home.jpg" alt="Video Thumbnail">
-        <div class="play-button">
-          <svg viewBox="0 0 24 24"><path fill="#fff" d="M8 5v14l11-7z"/></svg>
-        </div>
-      </div>
-    </section>
-    <!-- Stats Section -->
-<section class="stats">
-  <div class="stats-container">
-    <div class="stat-card">
-      <div class="stat-number">34</div>
-      <div class="stat-text">Buildings <br> Completed Now</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">12</div>
-      <div class="stat-text">Years <br> Experience</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">24</div>
-      <div class="stat-text">Awards <br> Won 2023</div>
-    </div>
-  </div>
+    <section class="video-view" aria-labelledby="video-title">
+<div class="video-bg">
+<div class="video-inner">
+<p class="video-subtitle">VIDEO VIEW</p>
+<h1 class="video-heading">Get Closer View &amp;<br><span class="video-heading-sub">Different Feeling</span></h1>
+<div class="video-thumb-wrap">
+<div class="video-card">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80" alt="Property video thumbnail" class="video-thumb">
+<button class="video-play" aria-label="Play property video"><svg viewBox="0 0 24 24" width="28" height="28"><path fill="#fff" d="M8 5v14l11-7z"/></svg></button>
+</div>
+</div>
+</div>
+</div>
 </section>
+<br><br>
+    <!-- ===== Stats Section (updated) ===== -->
+  <section class="stats">
+<div class="stats-container">
+<div class="stat-card"><div class="stat-number">34</div><div class="stat-text"><span>Buildings</span><br><span>Completed Now</span></div></div>
+<div class="stat-card"><div class="stat-number">12</div><div class="stat-text"><span>Years</span><br><span>Experience</span></div></div>
+<div class="stat-card"><div class="stat-number">24</div><div class="stat-text"><span>Awards</span><br><span>Won 2023</span></div></div>
+</div>
+</section>
+<br><br>
+    <!-- ======= Best Deal (final layout: left | center | right) ======= -->
+    <section class="best-deal professional" aria-labelledby="best-deal-title">
+      <div class="container bd-inner">
+
+        <!-- header -->
+        <div class="bd-top bd-top-compact">
+<div class="bd-top-left">
+  <p class="bd-hero-subtitle" style="color: red; padding-left: 10px;"><b>! BEST DEAL</b></p>
+<h1 class="bd-hero-title">Find your best deal<br><span class="bd-hero-sub">Right Now!</span></h1>
+</div>
+<div class="bd-top-right">
+<div class="bd-filters">
+<button class="bd-filter" data-type="apartment" aria-selected="true">Apartment</button>
+<button class="bd-filter" data-type="villa">Villa House</button>
+<button class="bd-filter" data-type="penthouse">Penthouse</button>
+</div>
+</div>
+</div>
+
+        <!-- grid -->
+        <div class="bd-grid bd-grid-equal">
+
+          <!-- LEFT: fixed stats container (separate box) -->
+          <aside class="bd-left-card" role="region" aria-label="Property quick facts">
+            <div class="left-card-inner">
+              <h4 class="left-card-title">Property Facts</h4>
+              <ul class="left-facts">
+                <li><span class="fact-label">Total flat space</span><span id="stat-space" class="fact-val">—</span></li>
+                <li><span class="fact-label">Floor number</span><span id="stat-floor" class="fact-val">—</span></li>
+                <li><span class="fact-label">Number of rooms</span><span id="stat-rooms" class="fact-val">—</span></li>
+                <li><span class="fact-label">Parking available</span><span id="stat-parking" class="fact-val">—</span></li>
+                <li><span class="fact-label">Payment process</span><span id="stat-payment" class="fact-val">—</span></li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- CENTER: single image per property; JS toggles .active -->
+          <div class="bd-center-image" role="region" aria-label="Property images">
+
+            <div class="bd-image-frame" data-type="apartment" aria-hidden="true">
+              <div class="bd-image-wrap">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="Apartment main" class="bd-main-img">
+                <div class="bd-badges">
+                  <span class="bd-badge">Verified</span>
+                  <span class="bd-badge">Furnished</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-image-frame" data-type="villa" aria-hidden="true">
+              <div class="bd-image-wrap">
+                <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1400&q=80" alt="Villa main" class="bd-main-img">
+                <div class="bd-badges">
+                  <span class="bd-badge">Best Seller</span>
+                  <span class="bd-badge">Garden</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-image-frame" data-type="penthouse" aria-hidden="true">
+              <div class="bd-image-wrap">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80" alt="Penthouse main" class="bd-main-img">
+                <div class="bd-badges">
+                  <span class="bd-badge premium">Premium</span>
+                  <span class="bd-badge">Top View</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: simplified — heading + two paragraphs; ONLY bottom schedule button -->
+          <div class="bd-right-info" role="region" aria-label="Property details">
+            <h4 class="bd-info-title">Extra Info About the Property</h4>
+
+            <p id="right-p1" class="bd-info-paragraph">—</p>
+            <p id="right-p2" class="bd-info-paragraph">—</p>
+
+            <!-- bottom schedule button identical to navbar look AND with calendar icon -->
+            <div class="bd-bottom-schedule">
+              <a href="#" class="nav-schedule fake-visit" aria-label="Schedule a Visit (property)">
+                <span class="calendar-circle" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                </span>
+                Schedule a Visit
+              </a>
+            </div>
+          </div>
+
+        </div> <!-- /.bd-grid -->
+
+      </div> <!-- /.container -->
+    </section>
+    <!-- ======= End Best Deal ======= -->
+
   </main>
 
+  <!-- ====== JavaScript (no image URLs inside script) ====== -->
   <script>
-  document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
-    toggle.addEventListener("click", () => {
-      const content = toggle.nextElementSibling;
-      content.style.display = (content.style.display === "block") ? "none" : "block";
-    });
-  });
+   (function(){
+const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
+function closeAll(except){ dropdowns.forEach(d=>{ if(d!==except){ d.classList.remove('open'); const p=d.querySelector('.dropdown-content'); if(p){ p.setAttribute('aria-hidden','true'); p.style.maxHeight='0px'; p.classList.remove('open'); }}})}
+dropdowns.forEach(item=>{
+const btn = item.querySelector('.dropdown-toggle');
+const panel = item.querySelector('.dropdown-content');
+btn.setAttribute('role','button'); btn.setAttribute('tabindex','0'); btn.setAttribute('aria-expanded','false');
+if(panel){ panel.setAttribute('aria-hidden','true'); panel.style.maxHeight='0px'; }
+btn.addEventListener('click', ()=>{
+const open = item.classList.contains('open');
+if(open){ item.classList.remove('open'); btn.setAttribute('aria-expanded','false'); panel.setAttribute('aria-hidden','true'); panel.style.maxHeight='0px'; panel.classList.remove('open'); }
+else{ closeAll(item); item.classList.add('open'); btn.setAttribute('aria-expanded','true'); panel.setAttribute('aria-hidden','false'); panel.style.maxHeight = panel.scrollHeight + 'px'; panel.classList.add('open'); }
+});
+btn.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); btn.click(); } });
+});
+})();
+
+    (function(){
+      const data = {
+        apartment: {
+          space: "92 m²",
+          floor: "7th",
+          rooms: "2",
+          parking: "Yes",
+          payment: "Bank",
+          p1: "A modern apartment located in the heart of the city, offering easy access to shopping centers, cafes and transport hubs.",
+          p2: "Designed with thoughtful layouts to maximize light and usable space; ideal for young professionals."
+        },
+        villa: {
+          space: "320 m²",
+          floor: "2",
+          rooms: "4",
+          parking: "Yes",
+          payment: "Bank",
+          p1: "This modern villa blends traditional architecture with contemporary comforts and a private garden.",
+          p2: "Perfect for families — modular kitchen, energy efficient systems, and proximity to schools."
+        },
+        penthouse: {
+          space: "540 m²",
+          floor: "34th",
+          rooms: "6",
+          parking: "Yes",
+          payment: "Bank",
+          p1: "Ultra-luxury penthouse with panoramic skyline views, private terrace and rooftop amenities.",
+          p2: "High-end finishes, smart-home integration and concierge services ensure a premium living experience."
+        }
+      };
+
+      const filters = document.querySelectorAll('.bd-filter');
+      const leftEls = {
+        space: document.getElementById('stat-space'),
+        floor: document.getElementById('stat-floor'),
+        rooms: document.getElementById('stat-rooms'),
+        parking: document.getElementById('stat-parking'),
+        payment: document.getElementById('stat-payment')
+      };
+      const rightEls = {
+        p1: document.getElementById('right-p1'),
+        p2: document.getElementById('right-p2')
+      };
+      const imageFrames = document.querySelectorAll('.bd-image-frame');
+
+      function showFrame(type) {
+        imageFrames.forEach(f => {
+          if (f.dataset.type === type) {
+            f.classList.add('active');
+            f.removeAttribute('aria-hidden');
+          } else {
+            f.classList.remove('active');
+            f.setAttribute('aria-hidden','true');
+          }
+        });
+      }
+
+      function setProperty(type) {
+        const item = data[type];
+        if (!item) return;
+        leftEls.space.textContent = item.space;
+        leftEls.floor.textContent = item.floor;
+        leftEls.rooms.textContent = item.rooms;
+        leftEls.parking.textContent = item.parking;
+        leftEls.payment.textContent = item.payment;
+        rightEls.p1.textContent = item.p1;
+        rightEls.p2.textContent = item.p2;
+        showFrame(type);
+
+        filters.forEach(f => {
+          const sel = f.dataset.type === type;
+          f.classList.toggle('active', sel);
+          f.setAttribute('aria-selected', sel ? 'true' : 'false');
+        });
+      }
+
+      setProperty('apartment');
+
+      filters.forEach(btn => {
+        btn.addEventListener('click', () => setProperty(btn.dataset.type));
+        btn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }});
+      });
+
+    })();
   </script>
+
 </body>
 </html>
