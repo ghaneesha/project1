@@ -81,3 +81,116 @@ body {
   padding-left:10px;
   border-left:2px solid #eee;
 }
+/* Video View Section */
+.video-view {
+  position: relative;
+  background: url('./images/home_background.jpeg') no-repeat center center/cover;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Video View Text */
+.video-subtitle {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: red;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.video-heading {
+  margin: 5px 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  font-family: 'Georgia', serif;
+}
+
+.video-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.video-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,0,0,0.85);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.play-button:hover {
+  background: rgba(255,0,0,1);
+}
+
+.play-button svg {
+  width: 36px;
+  height: 36px;
+}
+/* Stats Section */
+.stats {
+  background: #fff;
+  padding: 80px 10%;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  background: #e1b2b2;
+  border-radius: 10px;
+  padding: 20px 16px;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: red;
+  margin-right: 15px;
+  line-height: 1;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
