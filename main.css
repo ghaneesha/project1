@@ -578,3 +578,44 @@ max-height: 0; overflow:hidden; opacity:0; transition: max-height .32s ease, opa
   .props-hero-title h1 { font-size:32px; }
   .props-filter-buttons { flex-wrap:wrap; gap:8px; }
 }
+
+/* ===== Pagination spherical style ===== */
+.pagination-wrap { margin: 36px 0 56px; display:flex; justify-content:center; }
+.pagination { display:flex; gap:10px; align-items:center; background:#000; padding:8px 12px; border-radius:999px; list-style:none; margin:0; }
+
+/* common button style */
+.page-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s;
+  outline: none;
+}
+
+/* hover */
+.page-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+
+/* active = red pill (page you are on) */
+.page-btn.active {
+  background: linear-gradient(90deg,#c62828,#e25555);
+  color: #fff;
+  box-shadow: 0 12px 34px rgba(198,40,40,0.18);
+}
+
+/* prev/next slightly narrower */
+.page-btn[data-page="prev"],
+.page-btn[data-page="next"] { width:40px; height:40px; font-size:16px; }
+
+/* small screens: shrink */
+@media (max-width: 600px) {
+  .page-btn { width:38px; height:38px; font-size:14px; }
+  .pagination { padding:6px 10px; gap:8px; }
+}
