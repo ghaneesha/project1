@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Property Details — VillaProject</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- NAVBAR (same as home; keep your existing markup if different) -->
+<header class="navbar" role="banner">
+  <div class="navbar-top">
+    <div class="navbar-left">
+      <span class="contact-email" title="Email">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        villa@example.com
+      </span>
+      <span class="contact-address" title="Address">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        123 Beach Road, City
+      </span>
+    </div>
+
+    <div class="navbar-right" aria-hidden="false">
+      <a href="#" class="social-icon" title="Facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.891h2.54V9.797c0-2.507 1.492-3.891 3.777-3.891 1.094 0 2.238.196 2.238.196v2.459h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12" /></svg>
+      </a>
+      <!-- ... other social icons ... -->
+    </div>
+  </div>
+
+  <div class="navbar-bottom" role="navigation" aria-label="Main navigation">
+    <div class="navbar-villa"><strong>VILLA</strong></div>
+    <nav class="navbar-links">
+      <a href="./home.html" class="nav-link">Home</a>
+      <a href="./properties.html" class="nav-link">Properties</a>
+      <a href="./property.html" class="nav-link active">Property Details</a>
+      <a href="./contact.html" class="nav-link">Contact Us</a>
+      <div class="nav-schedule" role="button" tabindex="0" aria-label="Schedule a Visit (nav)">
+        <div class="calendar-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+        </div>
+        Schedule a Visit
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- END NAVBAR -->
+
+<main id="main">
+
+  <!-- HERO / BREADCRUMB -->
+  <section class="props-hero single-hero">
+    <div class="props-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=2000&q=80');">
+      <div class="props-breadcrumb-box" aria-hidden="false">
+        <nav aria-label="breadcrumb" class="breadcrumb-inner">
+          <a href="index.html" class="crumb">HOME</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current">SINGLE PROPERTY</span>
+        </nav>
+      </div>
+
+      <div class="props-hero-title" style="margin-top:18px;">
+        <h1 style="font-size:44px; font-weight:900; color:#fff; text-shadow:0 12px 36px rgba(0,0,0,0.5);">SINGLE PROPERTY</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY DETAIL MAIN -->
+  <section class="property-detail-section">
+    <div class="container">
+      <!-- changed: use classes not inline grid so CSS can control sizing -->
+      <div class="property-grid">
+        <!-- LEFT: content column -->
+        <div class="property-left">
+
+          <div class="property-main-image">
+            <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1500&q=80" alt="Property Image" class="property-main-img">
+          </div>
+
+          <div class="prop-type-row">
+            <span class="prop-type">Apartment</span>
+          </div>
+
+          <h2 class="prop-title">24 New Street Miami, OR 24560</h2>
+
+          <div class="property-description">
+            <p>
+              Get the best villa agency HTML CSS Bootstrap Template for your company website.
+              This sample property description shows a spacious modern villa with large windows, open plan living area, and private pool.
+            </p>
+            <p>
+              When you look for best websites, you can simply type XYZ in any search engine website. It provides a contemporary design, comfortable rooms, and premium finishes. Perfect for families and investors.
+            </p>
+          </div>
+
+          <!-- Accordion/FAQ (reusing existing .dropdown JS) -->
+          <div class="accordion-group">
+            <div class="dropdown">
+              <div class="dropdown-toggle" tabindex="0">Best useful links ?</div>
+              <div class="dropdown-content">
+                <p>Dolor amesit amet... sample text to show helpful links and info.</p>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown-toggle" tabindex="0">How does this work ?</div>
+              <div class="dropdown-content">
+                <p>Explanation on how booking / scheduling / property visit works.</p>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown-toggle" tabindex="0">Why is Villa the best ?</div>
+              <div class="dropdown-content">
+                <p>Short persuasive reasons about quality, service and trust.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+                <!-- Right -->
+        <div class="featured-info" aria-hidden="false">
+          <div class="info-box">
+            <svg class="info-icon" viewBox="0 0 24 24"><path d="M3 3h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"/></svg>
+            <div><h4>250 m²</h4><p>Total Flat Space</p></div>
+          </div>
+          <div class="info-box">
+            <svg class="info-icon" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 012 2v16a2 2 0 
+            01-2 2H6a2 2 0 01-2-2V4a2 
+            2 0 012-2zm0 2v16h12V4H6zm2 
+            2h8v2H8V6z"/></svg>
+            <div><h4>Contract</h4><p>Ready Documents</p></div>
+          </div>
+          <div class="info-box">
+            <svg class="info-icon" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v2h20V6a2 
+            2 0 00-2-2zM2 10v8a2 2 0 
+            002 2h16a2 2 0 002-2v-8H2zm4 
+            4h4v2H6v-2z"/></svg>
+            <div><h4>Payment</h4><p>Secure Process</p></div>
+          </div>
+          <div class="info-box">
+            <svg class="info-icon" viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5-3.9 9.74-9 
+            11-5.1-1.26-9-6-9-11V5l9-4z"/></svg>
+            <div><h4>Safety</h4><p>24/7 Control</p></div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- BEST DEAL preview (filters + images): re-using same markup & classes used on home -->
+  <section class="best-deal professional">
+    <div class="container bd-inner">
+      <div class="bd-top bd-top-compact">
+        <div class="bd-top-left">
+          <p class="bd-hero-subtitle" style="color: red; padding-left: 10px;"><b>! BEST DEAL</b></p>
+          <h1 class="bd-hero-title">Find your best deal<br><span class="bd-hero-sub">Right Now!</span></h1>
+        </div>
+        <div class="bd-top-right">
+          <div class="bd-filters" role="tablist" aria-label="Property type">
+            <button class="bd-filter" data-type="apartment" aria-selected="true">Apartment</button>
+            <button class="bd-filter" data-type="villa">Villa House</button>
+            <button class="bd-filter" data-type="penthouse">Penthouse</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bd-grid bd-grid-equal">
+        <aside class="bd-left-card">
+          <ul class="left-facts">
+            <li><div class="fact-label">Total flat space</div><div class="fact-val" id="stat-space-2">—</div></li>
+            <li><div class="fact-label">Floor number</div><div class="fact-val" id="stat-floor-2">—</div></li>
+            <li><div class="fact-label">Number of rooms</div><div class="fact-val" id="stat-rooms-2">—</div></li>
+            <li><div class="fact-label">Parking Available</div><div class="fact-val" id="stat-parking-2">—</div></li>
+            <li><div class="fact-label">Payment Process</div><div class="fact-val" id="stat-payment-2">—</div></li>
+          </ul>
+        </aside>
+
+        <div class="bd-center-image">
+          <div class="bd-image-frame" data-type="apartment" aria-hidden="true">
+            <div class="bd-image-wrap">
+              <img src="https://cf.bstatic.com/static/img/theme-index/bg_aparthotel/48bd5066204f1047092f3a1e5f4de71edcd5bf47.jpg" alt="Apartment main" class="bd-main-img">
+            </div>
+          </div>
+          <div class="bd-image-frame" data-type="villa" aria-hidden="true">
+            <div class="bd-image-wrap">
+              <img src="https://www.veeragroup.com/wp-content/uploads/2024/03/3-1.jpg" alt="Villa main" class="bd-main-img">
+            </div>
+          </div>
+          <div class="bd-image-frame" data-type="penthouse" aria-hidden="true">
+            <div class="bd-image-wrap">
+              <img src="https://media.cnn.com/api/v1/images/stellar/prod/171011145822-penthouse-suites-william-vale-terrace.jpg" alt="Penthouse main" class="bd-main-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="bd-right-info">
+          <h4 class="bd-info-title">Extra Info About the Property</h4>
+          <p id="right-p1" class="bd-info-paragraph">—</p>
+          <p id="right-p2" class="bd-info-paragraph">—</p>
+          <div class="bd-bottom-schedule">
+            <a href="#" class="fake-visit nav-schedule">
+              <span class="calendar-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+              </span>
+              Schedule a Visit
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Simple Footer ===== -->
+<footer class="simple-footer">
+  <p>Copyright &copy; 2048 Villa Agency co.,Ltd. All rights reserved. Design Haneesha</p>
+</footer>
+
+</main>
+
+<!-- JS: filter + property data + accessible dropdowns -->
+<script>
+(function(){
+  /* ---------------------------
+     Accordion (dropdown) behavior
+     --------------------------- */
+  const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
+  dropdowns.forEach(item=>{
+    const btn = item.querySelector('.dropdown-toggle');
+    const panel = item.querySelector('.dropdown-content');
+    if(!btn || !panel) return;
+    btn.setAttribute('role','button');
+    btn.setAttribute('tabindex','0');
+    btn.addEventListener('click', toggle);
+    btn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }});
+    function toggle(){
+      const open = item.classList.contains('open');
+      if(open){
+        item.classList.remove('open');
+        panel.style.maxHeight = '0px';
+        panel.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      } else {
+        item.classList.add('open');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        panel.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    }
+  });
+
+  /* ---------------------------
+     Best-deal filters (images + text)
+     --------------------------- */
+  const data = {
+    apartment: {
+      space: "92 m²", floor: "7th", rooms: "2", parking: "Yes", payment: "Bank",
+      p1: "A modern apartment located in the heart of the city, offering easy access to shopping centers, cafes and transport hubs.",
+      p2: "Designed with thoughtful layouts to maximize light and usable space; ideal for young professionals."
+    },
+    villa: {
+      space: "320 m²", floor: "2", rooms: "4", parking: "2 Cars", payment: "Bank",
+      p1: "This modern villa blends traditional architecture with contemporary comforts and a private garden.",
+      p2: "Perfect for families — modular kitchen, energy efficient systems, and proximity to schools."
+    },
+    penthouse: {
+      space: "540 m²", floor: "34th", rooms: "6", parking: "Valet", payment: "Bank",
+      p1: "Ultra-luxury penthouse with panoramic skyline views, private terrace and rooftop amenities.",
+      p2: "High-end finishes, smart-home integration and concierge services ensure a premium living experience."
+    }
+  };
+
+  // selectors (two sets - property detail right side & best-deal right)
+  const filters = Array.from(document.querySelectorAll('.bd-filter'));
+  const leftEls = {
+    space: document.getElementById('stat-space'),
+    floor: document.getElementById('stat-floor'),
+    rooms: document.getElementById('stat-rooms'),
+    parking: document.getElementById('stat-parking'),
+    payment: document.getElementById('stat-payment')
+  };
+  const rightEls = {
+    p1: document.getElementById('right-p1'),
+    p2: document.getElementById('right-p2')
+  };
+  // also allow best-deal secondary ids (if present)
+  const leftEls2 = {
+    space: document.getElementById('stat-space-2'),
+    floor: document.getElementById('stat-floor-2'),
+    rooms: document.getElementById('stat-rooms-2'),
+    parking: document.getElementById('stat-parking-2'),
+    payment: document.getElementById('stat-payment-2')
+  };
+
+  const imageFrames = Array.from(document.querySelectorAll('.bd-image-frame'));
+  function showFrame(type){
+    imageFrames.forEach(f=>{
+      if(f.dataset.type === type) {
+        f.classList.add('active');
+        f.removeAttribute('aria-hidden');
+      } else {
+        f.classList.remove('active');
+        f.setAttribute('aria-hidden','true');
+      }
+    });
+  }
+
+  function setProperty(type){
+    const item = data[type];
+    if(!item) return;
+    // update main property-right (detail)
+    if(leftEls.space) leftEls.space.textContent = item.space;
+    if(leftEls.floor) leftEls.floor.textContent = item.floor;
+    if(leftEls.rooms) leftEls.rooms.textContent = item.rooms;
+    if(leftEls.parking) leftEls.parking.textContent = item.parking;
+    if(leftEls.payment) leftEls.payment.textContent = item.payment;
+    if(rightEls.p1) rightEls.p1.textContent = item.p1;
+    if(rightEls.p2) rightEls.p2.textContent = item.p2;
+
+    // update best-deal small stats (if present)
+    if(leftEls2.space) leftEls2.space.textContent = item.space;
+    if(leftEls2.floor) leftEls2.floor.textContent = item.floor;
+    if(leftEls2.rooms) leftEls2.rooms.textContent = item.rooms;
+    if(leftEls2.parking) leftEls2.parking.textContent = item.parking;
+    if(leftEls2.payment) leftEls2.payment.textContent = item.payment;
+
+    // toggle images
+    showFrame(type);
+
+    // update selected state on filter buttons
+    filters.forEach(f=>{
+      const sel = f.dataset.type === type;
+      f.classList.toggle('active', sel);
+      f.setAttribute('aria-selected', sel ? 'true' : 'false');
+    });
+  }
+
+  // initial
+  setProperty('apartment');
+
+  // events for filters
+  filters.forEach(btn=>{
+    btn.addEventListener('click', ()=> setProperty(btn.dataset.type));
+    btn.addEventListener('keydown', e=> { if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }});
+  });
+
+  // fake schedule buttons click feedback (visual only)
+  document.querySelectorAll('.fake-visit, .nav-schedule').forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      e.preventDefault();
+      btn.classList.add('clicked');
+      setTimeout(()=>btn.classList.remove('clicked'), 220);
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
